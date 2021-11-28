@@ -29,7 +29,7 @@ const useFetch = (url) => {
               setIsLoading(false)
             }    
           })
-        }, 1000)
+        }, 10)
 
         return () => abortCont.abort();
       }, [url]);
